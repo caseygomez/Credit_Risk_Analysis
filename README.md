@@ -64,6 +64,3 @@ The alternative hypothesis states that safety rating does increase the price of 
 I will test this hypothesis with the chi-squared test, creating categorical ranges for price (low-end, mid-range, high-end) and comparing that to the categorical safety ratings (A,B,C,D,F).  
 
 I will need the dataset of available MechaCars, that data will include car make, model, year and price. I will add a column for safety rating and assign the letter based on the NHTSA report. Additionally I will make the pricing range column and assign based on ranges. The competition dataset will include the same information. 
-
-If the p-value is less than .05 I will reject the null hypothesis, the safety rating does effect the price of the car.  
-=======
