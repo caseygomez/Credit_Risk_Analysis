@@ -49,7 +49,7 @@ This project utilizes skills in data preparation, statistical reasoning, and sup
     * High Risk: .02
     * Low Risk: .78  
 * Benefits:
-        * For an instance from the minority class, a number of its closest neighbors is chosen. Based on the values of these neighbors, new values are created.
+    * For an instance from the minority class, a number of its closest neighbors is chosen. Based on the values of these neighbors, new values are created.
 ---
 ### ClusterCentroids:
 
@@ -126,7 +126,6 @@ This project utilizes skills in data preparation, statistical reasoning, and sup
 * Benefits:
     * The classifier is an ensemble of AdaBoost learners trained on different balanced bootstrap samples. 
     * After evaluating the errors of the first model, another model is trained. This time, however, the model gives extra weight to the errors from the previous model. The purpose of this weighting is to minimize similar errors in subsequent models.
-
 ---
 ### Credit Risk Analysis:
 Overview of the analysis: Explain the purpose of this analysis.
