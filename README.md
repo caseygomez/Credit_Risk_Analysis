@@ -4,6 +4,12 @@
 This project utilizes skills in data preparation, statistical reasoning, and supervised machine learning. Utilizing different techniques to train and evaluate models with unbalanced classes, the final result is a recommendation on which model performs best to predict credit risk. All analysis is written in Python.
 
 ---
+### Credit Risk Analysis:
+After thorough analysis it is clear that all six models have inherent risk, however the EasyEnsembleClassifer (EEC) model yields the best results. Many of the rates were highest using the EEC model. The overall accuracy rate of 92.54% as well as the 7% precision rate for "High Risk" loan candidates were both the highest. Additionally the recall rates for both risk groups were high and the F1 rate for the "High Risk" loan candidates was highest at 14%. 
+
+It is important to remember that sampling techniques cannot overcome the deficiencies of the original dataset. The majority of the applications were classified as "Low Risk". With so few data points for the "High Risk" classification the algorithms could skew results. For this project the Q1 2019 data was used, it would be interesting to compare Q1 data from previous years or to look at all of 2019. 
+
+---
 ### Resources:
 * Source Code: [Credit Risk Ensemble](credit_risk_ensemble.ipynb), [Credit Risk Resampling](credit_risk_resampling.ipynb)
 * Source Data: [2019 Q1 Loan Stats](LoanStats_2019Q1.csv)
@@ -128,6 +134,9 @@ This project utilizes skills in data preparation, statistical reasoning, and sup
     * Can handle thousands of input variables without variable deletion.
     * Are robust to outliers and nonlinear data.
     * Run efficiently on large datasets.
+
+![BalancedRandomForestClassifierFeatures](resources/BRFC_features.png)
+
 ---
 ### EasyEnsembleClassifier:
 ![EasyEnsembleClassifier](resources/EEC.png)
@@ -150,7 +159,3 @@ This project utilizes skills in data preparation, statistical reasoning, and sup
     * The classifier is an ensemble of AdaBoost learners trained on different balanced bootstrap samples. 
     * After evaluating the errors of the first model, another model is trained. This time, however, the model gives extra weight to the errors from the previous model. The purpose of this weighting is to minimize similar errors in subsequent models.
 ---
-### Credit Risk Analysis:
-After thorough analysis it is clear that all six models have inherent risk, however the EasyEnsembleClassifer (EEC) model yields the best results. Many of the rates were highest using the EEC model. The overall accuracy rate of 92.54% as well as the 7% precision rate for "High Risk" loan candidates were both the highest. Additionally the recall rates for both risk groups were high and the F1 rate for the "High Risk" loan candidates was highest at 14%. 
-
-It is important to remember that sampling techniques cannot overcome the deficiencies of the original dataset. The majority of the applications were classified as "Low Risk". With so few data points for the "High Risk" classification the algorithms could skew results. For this project the Q1 2019 data was used, it would be interesting to compare Q1 data from previous years or to look at all of 2019. 
