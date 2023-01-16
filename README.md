@@ -1,7 +1,7 @@
 # Credit Risk Analysis
 
 ## Overview:
-Utilizing data preparation, statistical reasoning, and machine learning to solve a real-world challenge: credit card risk. This analysis uses supervised machine learning techniques such as resampling, SMOTEENN and ensemble classifiers to predict credit risk. All analysis is written in Python.
+Utilizing data preparation, statistical reasoning, and machine learning to solve a real-world challenge: credit card risk. This analysis uses supervised machine learning techniques such as resampling, SMOTEENN and ensemble classifiers to predict credit risk. All analysis is written in Python. 
 
 ---
 ### Resources:
@@ -19,7 +19,7 @@ Utilizing data preparation, statistical reasoning, and machine learning to solve
 ---
 ### Resampling Models:
 
-![Linear Regression Summary](images/summary_lm.png)
+![Resampling Models](images/summary_lm.png)
 
 To better predict fuel efficiency (mpg), the dependent variable, I applied the multiple linear regression model with other variables of interest. These variables included vehicle length, vehicle weight, spoiler angle, ground clearance and AWD. Two variables that provided a non-random amount of variance to the mpg values in the dataset are:
 
@@ -35,21 +35,16 @@ The multiple r-squared is .71 with a p-value of 5.35e-11, both are statistically
 ---
 ### SMOTEENN Algorithm:
 
-![Total Summary](images/total_summary.png)
+![SMOTEENN Algorithm](images/total_summary.png)
 
 When summarizing the manufacturing lots in total the suspension coil data has a variance of 62.29 pounds per square inch. This is below 100 pounds per square inch that the design specifications dictate. 
-
-![Lot Summary](images/lot_summary.png)
 
 Breaking down the data further and grouping by manufacturing lot we see Lot 3 has exceeded the design specfications and has a variance of 170.29 pounds per square inch. Lot 3 is skewing the data, this should be considered when making a decision. 
 
 ---
 ### Ensemble Classifiers:
 
-![Total t-test](images/ttest.png)
-![Lot 1 t-test](images/lot1.png)
-![Lot 2 t-test](images/lot2.png)
-![Lot 3 t-test](images/lot3.png)
+![Ensemble Classifiers](images/ttest.png)
 
 The t-test results show Lot 3's mean PSI of 1496.14 is statistically significant with a p-value of .04. We reject the null hypothesis, the PSI is not equal to 1500. This is in alignment with our previous findings of high variance in Lot 3's PSI. 
 
