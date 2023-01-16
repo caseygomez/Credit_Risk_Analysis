@@ -1,7 +1,7 @@
 # Credit Risk Analysis
 
 ## Overview:
-Utilizing data preparation, statistical reasoning, and machine learning to solve a real-world challenge: credit card risk. This analysis uses supervised machine learning techniques such as resampling, SMOTEENN and ensemble classifiers to predict credit risk. All analysis is written in Python. 
+This project tests my skills in data preparation, statistical reasoning, and machine learning to solve a real-world challenge: credit card risk. Utilizing different techniques to train and evaluate models with unbalanced classes, after carefully analyzing the performance of these models I recommend --- should be used to predict credit risk. All analysis is written in Python. 
 
 ---
 ### Resources:
